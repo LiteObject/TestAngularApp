@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
 
   public title = 'Contact Page';
+  public cardWidth = '80%';
 
   constructor() { }
 

@@ -15,6 +15,15 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public cardWidth = '80%';
 
+  public products: Product[] = [
+    {id: 1, name: 'Product One' },
+    {id: 2, name: 'Product Two' }
+  ];
+
+  fillerContent = Array(25).fill(0).map(() =>
+  `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+    labore et dolore magna aliqua.`);
+
   constructor() { }
 
   ngOnInit() {

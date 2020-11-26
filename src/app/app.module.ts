@@ -43,6 +43,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { ProductModule } from './products/product.module';
 import { NavigationComponent } from './navigation/navigation.component';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { MatSelectModule } from '@angular/material/select';
 
 const config = {
   issuer: 'https://dev-463807.okta.com/oauth2/default',
@@ -89,6 +90,7 @@ const config = {
     MatSnackBarModule,
     MatDividerModule,
     MatListModule,
+    MatSelectModule,
     ReactiveFormsModule,
     FlexLayoutModule,
     GoogleMapsModule,
