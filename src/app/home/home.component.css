@@ -1,0 +1,7 @@
+.home-content:not(:first-child) {
+    margin-top: 16px;
+}
+
+section > mat-card {
+    margin-bottom: 16px;
+}

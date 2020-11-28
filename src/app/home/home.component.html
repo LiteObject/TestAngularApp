@@ -2,28 +2,30 @@
   <h2>{{ title }}</h2>
 </div>
 
-<section fxLayout="row wrap" fxLayoutAlign="center center">
-  <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
-    <mat-card-title>Welcome</mat-card-title>
-    <mat-card-content>
-      <p>
-        Very important content
-      </p>
-    </mat-card-content>
-    <mat-card-actions fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">
-      <button mat-raised-button color="accent" (click)="clickMe()">
-        Click Me
-      </button>
-    </mat-card-actions>
-  </mat-card>
-</section>
-<app-contact-form [contactCardWidth]="cardWidth"></app-contact-form>
+<div class="home-content">
+  <section fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
+      <mat-card-title>Welcome</mat-card-title>
+      <mat-card-content>
+        <p>
+          Very important content
+        </p>
+      </mat-card-content>
+      <mat-card-actions fxLayout="row" fxLayoutGap="20px" fxLayoutAlign="center">
+        <button mat-raised-button color="accent" (click)="clickMe()">
+          Click Me
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </section>
 
-<section fxLayout="row wrap" fxLayoutAlign="center center">
-  <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
-    <mat-card-title>Where are we...</mat-card-title>
-    <mat-card-content>
-      <app-google-map></app-google-map>
-    </mat-card-content>
-  </mat-card>
-</section>
+  <br />
+  <!-- <section fxLayout="row wrap" fxLayoutAlign="center center">
+    <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
+      <mat-card-title>Where are we...</mat-card-title>
+      <mat-card-content>
+        <app-google-map></app-google-map>
+      </mat-card-content>
+    </mat-card>
+  </section> -->
+</div>

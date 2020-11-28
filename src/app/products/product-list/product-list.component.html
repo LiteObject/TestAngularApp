@@ -1,0 +1,32 @@
+<div>
+    <h2>{{ title }}</h2>
+</div>
+
+
+<div class="home-content">
+    <section fxLayout="row wrap" fxLayoutAlign="center center">
+
+        <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
+          <mat-card-title>Products</mat-card-title>
+          <mat-card-content>
+            <mat-form-field appearance="standard" style="width: 100%;">
+              <mat-label>Select Product</mat-label>
+              <mat-select [ngModel]="selectedProduct" (ngModelChange)="onProductSelection($event)">
+                <mat-option [value]="0">None</mat-option>
+                <mat-option *ngFor="let product of products" [value]="product.id">{{product.name}}</mat-option>
+              </mat-select>
+            </mat-form-field>
+                  
+            <div #productContainer style="margin-top: 16px;">        
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </section>
+</div>
+
+<!-- <section [@fadeInOut]>
+    <h1>Product-List</h1>
+    <ng-container>
+        <span *ngFor="let c of content1">{{c}}</span>
+    </ng-container>
+</section> -->
