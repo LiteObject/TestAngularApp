@@ -20,27 +20,6 @@
   </section>
 
   <br />
-
-  <section fxLayout="row wrap" fxLayoutAlign="center center">
-
-    <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
-      <mat-card-title>Products</mat-card-title>
-      <mat-card-content>
-        <mat-select>
-          <mat-option>None</mat-option>
-          <mat-option *ngFor="let product of products" [value]="product.id">{{product.name}}</mat-option>
-        </mat-select>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
-      <mat-card-content>
-        <p *ngFor="let content of fillerContent">{{content}}</p>
-      </mat-card-content>
-    </mat-card>
-
-  </section>
-
   <!-- <section fxLayout="row wrap" fxLayoutAlign="center center">
     <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
       <mat-card-title>Where are we...</mat-card-title>

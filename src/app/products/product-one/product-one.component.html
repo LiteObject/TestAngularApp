@@ -1,1 +1,6 @@
-<h1>Product-One works!</h1>
+<section [@fadeInOut]>
+    <h1>Product-One</h1>
+    <ng-container>
+        <span *ngFor="let content of fillerContent">{{content}}</span>
+    </ng-container>
+</section>
