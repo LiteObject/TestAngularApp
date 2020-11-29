@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  public title = 'About Us';
+  public cardWidth = '80%';
+
   constructor() { }
 
   ngOnInit() {

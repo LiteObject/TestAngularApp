@@ -20,12 +20,12 @@
   </section>
 
   <br />
-  <!-- <section fxLayout="row wrap" fxLayoutAlign="center center">
+  <section fxLayout="row wrap" fxLayoutAlign="center center">
     <mat-card [fxFlex]="cardWidth" fxFlex.xs="100%">
-      <mat-card-title>Where are we...</mat-card-title>
+      <mat-card-title>Important Content</mat-card-title>
       <mat-card-content>
-        <app-google-map></app-google-map>
+        <span *ngFor="let content of fillerContent">{{content}}</span>
       </mat-card-content>
     </mat-card>
-  </section> -->
+  </section>
 </div>

@@ -16,6 +16,10 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   public cardWidth = '80%';
 
+  fillerContent = Array(100).fill(0).map(() =>
+     `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+     labore et dolore magna aliqua.`);
+
   constructor(
 ) {
 

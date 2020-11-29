@@ -28,10 +28,6 @@ export class ProductListComponent implements OnInit, OnDestroy, AfterViewInit {
 
   @Output() output = new EventEmitter();
 
-  // fillerContent = Array(25).fill(0).map(() =>
-  //   `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-  //   labore et dolore magna aliqua.`);
-
   content1: Array<string> = ['asdasdas'];
 
   public products: Product[] = [
@@ -57,7 +53,8 @@ export class ProductListComponent implements OnInit, OnDestroy, AfterViewInit {
 
   ngAfterViewInit(): void {
     /*REASON: https://indepth.dev/everything-you-need-to-know-about-the-expressionchangedafterithasbeencheckederror-error#c2ba*/
-    Promise.resolve(null).then(() => this.setComponent());
+    // Promise.resolve(null).then(() => this.setComponent());
+    this.setComponent();
   }
 
   onProductSelection(val) {

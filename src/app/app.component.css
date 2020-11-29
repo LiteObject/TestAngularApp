@@ -18,3 +18,7 @@
     background-color: gray;
     color: black;
   }
+
+  .content:not(:first-child) {
+    margin-top: 16px;
+}

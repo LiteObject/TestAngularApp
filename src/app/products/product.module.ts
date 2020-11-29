@@ -11,6 +11,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   declarations: [ProductListComponent, ProductOneComponent, ProductTwoComponent],
@@ -21,6 +22,7 @@ import { FormsModule } from '@angular/forms';
     MatCheckboxModule,
     MatInputModule,
     MatSelectModule,
+    MatButtonModule,
     FlexLayoutModule,
     FormsModule
     /* RouterModule.forChild([

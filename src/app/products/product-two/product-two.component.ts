@@ -41,6 +41,8 @@ const ELEMENT_DATA: PeriodicElement[] = [
 })
 export class ProductTwoComponent implements OnInit {
 
+  title = 'Product Two';
+
   @Output() output = new EventEmitter();
 
   displayedColumns: string[] = ['select', 'position', 'name', 'weight', 'symbol'];
@@ -72,5 +74,10 @@ export class ProductTwoComponent implements OnInit {
       return `${this.isAllSelected() ? 'select' : 'deselect'} all`;
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
+  }
+
+  clicked() {
+    const selected = this.selection.selected;
+    console.log('selected', selected);
   }
 }
